@@ -1,7 +1,9 @@
+import mongoose from 'mongoose';
 import { app } from '../src/shared/app'
 
 describe('server test', () => {
   afterAll(() => {
+    mongoose.disconnect();
     app.close()
   })
 
