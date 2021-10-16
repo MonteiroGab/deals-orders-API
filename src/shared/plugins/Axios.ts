@@ -10,7 +10,7 @@ class Axios {
     return response
   }
 
-  static async post(url: string, body: string, headers: { [key: string]: string }): Promise<AxiosResponse> {
+  static async post(url: string, body: any, headers: { [key: string]: string }): Promise<AxiosResponse> {
     const response = await axios.post(url, body, { headers }).catch(error => error.response || error)
     return response
   }

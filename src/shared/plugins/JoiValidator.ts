@@ -13,8 +13,3 @@ export class JoiValidator {
     return validate
   }
 }
-
-
-// É um middleware do JOI para validar os dados de entrada em JSON. 
-
-
