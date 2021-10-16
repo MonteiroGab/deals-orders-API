@@ -1,32 +1,32 @@
-import AppError from "@src/shared/errors/ApplicationError"
-import Axios from "@src/shared/plugins/Axios"
-import { IDealsData } from "../interfaces/IDeals"
+import HTTP_STATUS_CODE from '@src/shared/constants/httpCodes'
+import MESSAGES from '@src/shared/constants/responseMessages'
+import AppError from '@src/shared/errors/ApplicationError'
+import Pipedrive from '@src/shared/plugins/Pipedrive'
+import { IDealsData } from '../interfaces/IDeals'
 
-class CreateDealsService  {
+class CreateDealsService {
   private deals: Array<IDealsData>
 
-  constructor(dealsReceivedData: Array<IDealsData>){
+  constructor(dealsReceivedData: Array<IDealsData>) {
     this.deals = dealsReceivedData
   }
 
-  private async sendDealsToCRM(deal: IDealsData){
-    const crmUrl = `https://${process.env.PIPEDRIVE_HOST}.pipedrive.com/v1/deals?api_token=${process.env.PIPEDRIVE_API_TOKEN}`
-    const headers = {'content-type': 'application/json; charset=utf-8'}
-    try {
-      const {data, status} = await Axios.post(crmUrl, JSON.stringify(deal), headers)
-      if(data.success === false || status >= 400){
-        throw new AppError("Pipedrive integration error.", status, {error_info: data.error})
-      }
-    } catch (error) {
-      throw error
-    }
-  } 
-
   async execute(): Promise<any> {
-     for await (const deal of this.deals) {
-        await this.sendDealsToCRM(deal)
-     }
-     return { message: 'Success. All deals inserted.', statusCode: 201, data: {}}
+    const listOfPromiseDeals = []
+    const pipedrive = new Pipedrive()
+    for (const deal of this.deals) {
+      listOfPromiseDeals.push(pipedrive.createDeal(deal))
+    }
+    let wonDeals: Array<IDealsData>
+    await Promise.all(listOfPromiseDeals).catch(() => {
+      throw new AppError(MESSAGES.ERROR.DEAL.ERROR_CREATE_DEAL_PIPEDRIVE, HTTP_STATUS_CODE.BAD_GATEWAY.statusCode, {})
+    }).then(async () => wonDeals = await pipedrive.getDeals("won"))
+    
+    return {
+      message: MESSAGES.SUCCESS.DEAL.SUCCESS_CREATE_DEAL_PIPEDRIVE,
+      statusCode: HTTP_STATUS_CODE.OK.statusCode,
+      data: wonDeals,
+    }
   }
 }
 
