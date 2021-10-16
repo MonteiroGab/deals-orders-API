@@ -2,6 +2,7 @@
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
+        "resolveJsonModule": true,
         "lib": ["esnext"],
         "module": "commonjs",
         "baseUrl": ".",

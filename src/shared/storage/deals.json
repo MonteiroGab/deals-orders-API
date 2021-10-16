@@ -1,0 +1,39 @@
+{
+    "dealsPreLoadedData": [
+        {
+            "title": "Deal 1",
+            "value": 100,
+            "status": "won"
+        },
+        {
+            "title": "Deal 2",
+            "value": 200,
+            "status": "won"
+        },
+        {
+            "title": "Deal 3",
+            "value": 300,
+            "status": "won"
+        },
+        {
+            "title": "Deal 4",
+            "value": 400,
+            "status": "won"
+        },
+        {
+            "title": "Deal 5",
+            "value": 500,
+            "status": "open"
+        },
+        {
+            "title": "Deal 6",
+            "value": 600,
+            "status": "lost"
+        },
+        {
+            "title": "Deal 7",
+            "value": 700,
+            "status": "won"
+        }
+    ]
+}
