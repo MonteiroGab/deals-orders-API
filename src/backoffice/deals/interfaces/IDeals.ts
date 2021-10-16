@@ -1,3 +1,6 @@
 export interface IDealsData {
-  title: string; value: number; status: string, org_id: string
+  title: string
+  value: number
+  status: string
+  person_name: string
 }
