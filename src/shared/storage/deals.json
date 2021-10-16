@@ -4,43 +4,13 @@
             "title": "Deal 1",
             "value": 100,
             "status": "won",
-            "org_id": "gabrielle"
+            "person_name": "gabrielle"
         },
         {
             "title": "Deal 2",
             "value": 200,
             "status": "won",
-            "org_id": "gabrielle"
-        },
-        {
-            "title": "Deal 3",
-            "value": 300,
-            "status": "won",
-            "org_id": "gabrielle"
-        },
-        {
-            "title": "Deal 4",
-            "value": 400,
-            "status": "won",
-            "org_id": "gabrielle"
-        },
-        {
-            "title": "Deal 5",
-            "value": 500,
-            "status": "open",
-            "org_id": "maria"
-        },
-        {
-            "title": "Deal 6",
-            "value": 600,
-            "status": "lost",
-            "org_id": "natan"
-        },
-        {
-            "title": "Deal 7",
-            "value": 700,
-            "status": "won",
-            "org_id": "Empreiteira"
+            "person_name": "joao"
         }
     ]
 }
