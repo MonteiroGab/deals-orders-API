@@ -1,7 +1,7 @@
-export interface IDealsData {
+export interface IOrders {
   title: string
   value: number
   status: string
-  person_name: string,
+  person_name: string
   date: string
 }

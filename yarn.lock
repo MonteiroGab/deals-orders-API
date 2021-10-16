@@ -720,6 +720,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/jstoxml@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/jstoxml/-/jstoxml-2.0.1.tgz#3480851e6bc88d8f93520bb061eb7bb2ea6e9aec"
+  integrity sha512-BLhCvUm5deaeDJb162gQoWAaPNa0fFdxbUwcWa5Noc6kFMmqfAEPbySaypbltl0H6FiCkyhfvs91UK2uFFCfEQ==
+
 "@types/lodash@^4.14.170":
   version "4.14.175"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.175.tgz#b78dfa959192b01fae0ad90e166478769b215f45"
@@ -3670,6 +3675,11 @@ json5@^1.0.1:
   dependencies:
     minimist "^1.2.0"
 
+jstoxml@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jstoxml/-/jstoxml-2.2.4.tgz#4ddbe0f4a05ea7043353fd6268d041f6a975b765"
+  integrity sha512-w95fvNbbrlEua3r5ckeaDnlhmLPd2VIU6HLbU6iyrPPUMRyH0Dz4wrFsoUMJxzurcTB24jNaXvk0xsiQ/7bDLw==
+
 jsx-ast-utils@^2.1.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.4.1.tgz#1114a4c1209481db06c690c2b4f488cc665f657e"
@@ -4582,6 +4592,11 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+
+querystring@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.1.tgz#40d77615bb09d16902a85c3e38aa8b5ed761c2dd"
+  integrity sha512-wkvS7mL/JMugcup3/rMitHmd9ecIGd2lhFhK9N3UUQ450h66d1r3Y9nvXzQAW1Lq+wyx61k/1pfKS5KuKiyEbg==
 
 queue-microtask@^1.1.2, queue-microtask@^1.2.2:
   version "1.2.3"

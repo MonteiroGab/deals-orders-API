@@ -3,7 +3,7 @@ import { IPersonData } from '@src/backoffice/deals/interfaces/IPersons'
 import Axios from './Axios'
 
 class Pipedrive {
-  static pipedriveUrl: string = process.env.PIPEDRIVE_URL
+  static pipedriveUrl: string = process.env.PIPEDRIVE_API_URL
   static headers = { 'content-type': 'application/json; charset=utf-8' }
 
   createDeal(deal: IDealsData) {
@@ -28,7 +28,7 @@ class Pipedrive {
       formattedDealsResponse.push({
         title: wonDeal.title,
         value: wonDeal.value,
-        wonTime: wonDeal.won_time,
+        wonTime: wonDeal.add_time,
         personName: wonDeal.person_id.name
       })
     }
