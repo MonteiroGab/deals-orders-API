@@ -1,4 +1,4 @@
-require('../../deals/models/orders/orders')
+require('../models/orders/orders')
 import HTTP_STATUS_CODE from '@src/shared/constants/httpCodes'
 import { model } from 'mongoose'
 const ordersSchemaConfiguration = model('orders')
@@ -17,7 +17,6 @@ class GetOrdersService {
         data: reports,
       }
     } catch (error) {
-      console.log(error)
       throw error
     }
   }

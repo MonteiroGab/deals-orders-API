@@ -3,8 +3,8 @@ import MESSAGES from '@src/shared/constants/responseMessages'
 import AppError from '@src/shared/errors/ApplicationError'
 import Pipedrive from '@src/shared/plugins/Pipedrive'
 import { IDealsData } from '../interfaces/IDeals'
-import { IPersonData } from '../interfaces/IPersons'
-import CreateOrdersService from './CreateOrdersService'
+import { IPersonData } from '../../persons/interfaces/IPersons'
+import CreateOrdersService from '../../orders/services/CreateOrdersService'
 
 class CreateDealsService {
   private deals: Array<IDealsData>

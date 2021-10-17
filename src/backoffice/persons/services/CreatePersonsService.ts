@@ -14,7 +14,7 @@ class CreatePersonsService {
   async execute(): Promise<any> {
     const listOfPromisePersons = []
     const pipedrive = new Pipedrive()
-    for (const person of this.persons) {
+      for (const person of this.persons) {
       listOfPromisePersons.push(pipedrive.createPerson(person))
     }
     let personsId: Array<IPersonId> = []

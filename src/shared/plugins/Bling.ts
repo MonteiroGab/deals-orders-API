@@ -24,6 +24,7 @@ class Bling {
       header: true,
       indent: '  ',
     }
+
     const dateBasicSplitted = dealReceivedData.wonTime.split(' ')
     const dateSplittedYearMonthday = dateBasicSplitted[0].split('-')
     const xmlBody = {

@@ -38,7 +38,7 @@ class CreateOrdersService {
       ordersList.push({ date: currentOrder.data, price: currentOrder.totalvenda })
     }
     const groupOrdersByDate = groupBy(ordersList, 'date')
-    for (const date in groupOrdersByDate) {
+    for (const date in groupOrdersByDate) {      
       let priceSum = 0
       for (const orderData of groupOrdersByDate[date]) {
         priceSum = Number(orderData.price) + priceSum
