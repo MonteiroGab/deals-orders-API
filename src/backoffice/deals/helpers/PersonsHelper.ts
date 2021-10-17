@@ -1,5 +1,5 @@
 import { IDealsData } from '../interfaces/IDeals'
-import { IPersonData } from '../interfaces/IPersons'
+import { IPersonData } from '../../persons/interfaces/IPersons'
 
 class PersonsHelper {
   private personsFormattedData: Array<IPersonData> = []
@@ -18,6 +18,5 @@ class PersonsHelper {
     return this.personsFormattedData
   }
 }
-
 
 export default PersonsHelper

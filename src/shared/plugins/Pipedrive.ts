@@ -1,5 +1,5 @@
 import { IDealsData } from '@src/backoffice/deals/interfaces/IDeals'
-import { IPersonData } from '@src/backoffice/deals/interfaces/IPersons'
+import { IPersonData } from '@src/backoffice/persons/interfaces/IPersons'
 import Axios from './Axios'
 
 class Pipedrive {

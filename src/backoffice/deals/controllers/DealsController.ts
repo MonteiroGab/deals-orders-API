@@ -1,6 +1,6 @@
 import PersonsHelper from "../helpers/PersonsHelper"
 import CreateDealsService from "../services/CreateDealsService"
-import CreatePersonsService from "../services/CreatePersonsService";
+import CreatePersonsService from "../../persons/services/CreatePersonsService";
 class DealsController {
   async create(body): Promise<any> {
     const personsHelper = new PersonsHelper(body)
