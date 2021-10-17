@@ -1,0 +1,53 @@
+{
+    "dealsPreLoadedData": [
+        {
+            "title": "Exemplo de venda 01",
+            "value": 200,
+            "status": "won",
+            "person_name": "Juvenal Itapemirim",
+            "date": "2021-10-09 20:00:00"
+        },
+        {
+            "title": "Exemplo de venda 02",
+            "value": 300,
+            "status": "won",
+            "person_name": "César Andrade",
+            "date": "2021-10-09 22:00:00"
+        },
+        {
+            "title": "Exemplo de venda 03 - Relógio",
+            "value": 120000,
+            "status": "won",
+            "person_name": "Faustao Silva",
+            "date": "2021-10-16 10:00:00"
+        },
+        {
+            "title": "Exemplo de venda 04",
+            "value": 4000,
+            "status": "lost",
+            "person_name": "Maicon Donizete",
+            "date": "2021-10-17 20:00:00"
+        },
+        {
+            "title": "Exemplo de venda 05",
+            "value": 12000,
+            "status": "deleted",
+            "person_name": "Juliana Alves",
+            "date": "2021-10-15 20:00:00"
+        },
+        {
+            "title": "Exemplo de venda 06",
+            "value": 45000,
+            "status": "open",
+            "person_name": "Luan Araujo",
+            "date": "2021-10-16 20:00:00"
+        },
+        {
+            "title": "Exemplo de venda 07",
+            "value": 2500,
+            "status": "won",
+            "person_name": "Junior Galvão",
+            "date": "2021-10-17 20:00:00"
+        }
+    ]
+}
