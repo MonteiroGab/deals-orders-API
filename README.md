@@ -1,54 +1,22 @@
 # Nome do Projeto
+Deals Orders API
 
-Adicione aqui a descrição do projeto.
-
-## Qual o objetivo deste repositório?
-
-## Quais são os outros repositórios desta solução?
-
----
+Projeto de teste de integração com a Pipedrive e a Bling.
 
 <p align="center">
-    Adicione aqui badges de qualidade do código
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> |  Typescript
+    <img src="https://img.shields.io/badge/MongoDB-white?style=for-the-badge&logo=mongodb&logoColor=4EA94B" /> } MongoDB
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /> | Node.JS
+    <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"/> | Yarn
+    <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"> | Postman
+    <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white"> | Swagger
+    <img src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white"> | Eslint
+    <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E"> | Prettier
 </p>
 
----
-
-## Urls
-| Environment  |  Url  |
-| - | - |
-|  Sandbox |  xxx |
-|  Produção |  xxx |
-|  Sonar |  xxx |
-
-## CI/CD
-Link da ferramenta de CI e CD
-
 ## Setup
-Adicione aqui os passos para fazer o setup do ambiente e instalação do projeto
+
+Para instalar a aplicação, basta executar o comando "yarn install" no diretório raiz. A porta default da aplicação é a porta 3000. Lembre-se de configurar o seu arquivo .env com base no template .env.dev
 
 ## Testes
-Descreva aqui como executar os testes e quais testes a aplicação possui.
-
-### Commits
-
-Seguindo a [convenção](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-guidelines) proposta no projeto do framework Angular, as mensagens dos commits devem possuir os seguintes prefixos:
-
-- build: Alterações que afetam o build do sistema ou dependências externas.
-- ci: Alterações relacionadas aos arquivos de configuração de deploy ou scripts.
-- docs: Alterações de documentação apenas.
-- feat: Nova funcionalidade.
-- fix: Correção de um bug.
-- perf: Alterações no código para melhora de performance.
-- refactor: Alteração que não tenha acrecentado uma funcionalidade ou resolvido algum bug.
-- style: Alterações que não surtem efeito ao funcionamento do código. (Normalmente relacionado a formatação do código)
-- test: Adição de um teste ou correção de algum existente.
-
-Além do prefixo atente-se a outras regras que devem ser aplicadas nas mensagens:
-
-- Mensagem de commit deve ser em inglês.
-- Utilize verbos no presente para descrever a alteração (_corrects_, _changes_, _adds_, _replaces_, _removes_, etc).
-- Não utilize letra maiúscula na primeira letra.
-- Não adicione ponto final.
-
-O intuito desse padrão é tornar as mensagens, das alterações do projeto, mais legíveis e de fácil compreenção. As mensagens dos commits também serão usadas para atualizar o arquivo CHANGELOG.
+A aplicação possui apenas teste para healthcheck.
